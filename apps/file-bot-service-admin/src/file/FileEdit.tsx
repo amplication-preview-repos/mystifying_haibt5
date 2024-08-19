@@ -1,0 +1,13 @@
+import * as React from "react";
+import { Edit, SimpleForm, EditProps, TextInput } from "react-admin";
+
+export const FileEdit = (props: EditProps): React.ReactElement => {
+  return (
+    <Edit {...props}>
+      <SimpleForm>
+        <TextInput label="FileName" source="fileName" />
+        <TextInput label="FilePath" source="filePath" />
+      </SimpleForm>
+    </Edit>
+  );
+};
